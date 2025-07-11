@@ -1,8 +1,15 @@
+// src/App.jsx
+//import React from "react";
+import Sidebar from "./components/Sidebar";
+import Content from "./components/Content";
 
-function App() {
+const App = () => {
   return (
-   <h1 className='text-3xl font-bold underline bg-red-500'>Hello World</h1>
-  )
-}
+    <div className="flex flex-col md:flex-row min-h-screen">
+      <Sidebar />
+      <Content />
+    </div>
+  );
+};
 
-export default App
+export default App;
